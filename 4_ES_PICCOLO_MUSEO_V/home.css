@@ -1,0 +1,86 @@
+header {
+    background-color:rgb(44, 38, 32);
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+}
+ /*CSS TITOLO E SOTTOTITOLO*/
+
+h1, h2 {
+    color: rgb(255, 255, 255);
+}
+
+/*CSS TESTO*/
+
+h3 {
+    color: rgb(205, 187, 156);
+}
+
+main {
+    background-color:rgb(44, 38, 32);
+    font-size: 20px; 
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+p {
+    color: rgb(205, 187, 156);
+    background-color:rgb(44, 38, 32);
+    font-size: 20px; 
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*CSS BOX IMMAGINI*/
+
+img {
+    height: 500px;
+    border: white 5px solid;
+    margin-top: white 5px solid;
+    margin-bottom: white 5px solid;
+    padding: white 5px solid;
+}
+
+body {
+    background-color:rgb(205, 187, 156);
+}
+
+/*CSS FOOTER_[Torna indietro]*/
+
+a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    color: white;
+}
+
+footer {
+    background-color:rgb(44, 38, 32);
+    font-size: 15px; 
+    text-align: center;
+    line-height: 30px;
+    margin: 20px;
+}
+
+/*FLEXBOX_Artista2*/
+
+.Klimt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
