@@ -1,0 +1,37 @@
+html {
+    background-color: rgb(213, 197, 228);
+    text-align: center;
+}
+
+.marck-script-regular {
+    font-family: "Marck Script", cursive;
+    font-weight: 400px;
+    font-style: normal;
+    text-align: center;
+  }
+
+#title {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.contenitore {
+    width: 1000px;
+    height: 1000px;
+    
+}
+
+
+#image {
+    max-width:100%;
+    height: auto;
+}
+
+img {
+    display:block;
+    height: 400px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+}

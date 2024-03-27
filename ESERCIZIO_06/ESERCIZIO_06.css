@@ -14,16 +14,16 @@
     height: 100px;
     background-color: rgb(144, 114, 75);
 }
-#contenitore {
+.contenitore {
     width: 200px;
     height: 1000px;
 }
 #sticky {
     position: sticky;
-    top:50px;
+    top: 50px;
     width: 100px;
     height: 100px;
-    background-color: rgb(116, 92, 138);
+    background-color: rgb(36, 175, 164);
 }
 p {
     background-color: rgb(116, 92, 138); 
