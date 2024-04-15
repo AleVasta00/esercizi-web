@@ -69,6 +69,15 @@ footer {
     margin: 20px;
 }
 
+/*FLEXBOX_Artista1*/
+
+.area { 
+    grid-area: "myArea";
+    display: grid;
+    grid-template-areas:  'myArea  . .';
+    grid-gap: 10px;
+}
+
 /*FLEXBOX_Artista2*/
 
 .Klimt {
@@ -78,6 +87,8 @@ footer {
     justify-content: center;
     align-items: flex-start;
 }
+
+/*FLEXBOX_Artista3*/
 
 .wrapper {
     display: grid;
