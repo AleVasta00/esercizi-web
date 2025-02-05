@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<html lang="en">
-    <head>
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title></title>
-        <link rel="stylesheet" type="text/css" href=".css">
-    </head>
-    <body>
-        <header>
+<html lang="it">
 
-        </header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vasta Alessia</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+</head>
 
-        <main>
+<body>
 
-        </main>
+    <header class="im-fell-double-pica-regular">
 
-        <footer>
+        <div class="nav-container">
+            <a class="logo" href="#Home.html">vasta alessia</a>
 
-        </footer>
-    </body>
+            <!-- Hamburger Checkbox -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label> <!-- &#9776 = icona Hamburger-->
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="Progetti.html" class="dropbtn">Progetti</a>
+                        <div class="dropdown-content">
+                            <a href="Portfolio_tradizionale.html">Tradizionale</a>
+                            <a href="Portfolio_digitale.html">Digitale</a>
+                        </div>
+                    </li>
+                    <li><a href="Contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="im-fell-great-primer-sc-regular">Chi sono?</h1>
+
+        <hr color="white" class="hr_invisibile"> <!--DIVIDER invisibile-->
+        
+        <img src="logo_profilo/foto_profilo.jpg" alt="Foto_profilo" class="profile-image">
+        
+        <p class="im-fell-double-pica-regular">Sin da piccola ho sempre saputo che la mia strada fosse l'arte, anche se per molto tempo non sapevo in quale direzione esprimermi al meglio. 
+            Quando ho iniziato il corso di Grafica, mi sentivo un po’ limitata, come se quel percorso non racchiudesse tutte le possibilità creative che desideravo esplorare. 
+            Oggi, invece, sono una studentessa del terzo anno in Nuove Tecnologie dell’Arte, un ambito che mi ha permesso di ampliare i miei orizzonti e di sperimentare oltre la mia zona di comfort, 
+            anche grazie a colleghe con cui ho condiviso sfide e progetti. Nel mio stile amo curare i dettagli, sia nei miei disegni digitali che su carta. 
+            Ultimamente ho riscoperto una forte passione per Alphonse Mucha, uno dei miei artisti preferiti, e la sua estetica ha influenzato alcune delle mie recenti commissioni.</p>
+        
+        <hr color="white"> <!-- DIVIDER-->
+        
+        <a href="Progetti.html"><h2 class="im-fell-double-pica-regular">Portfolio</h2></a>
+        
+        <hr color="white"> <!-- DIVIDER-->
+        
+        <a href="Contatti.html"><h2 class="im-fell-double-pica-regular">Contatti</h2></a>
+                    
+        <hr color="white"> <!-- DIVIDER-->
+ 
+    </main>
+    
+    <footer class="im-fell-double-pica-regular">
+
+        <div class="container">
+            <a href="https://www.facebook.com/share/1B8NkbQNzw/?mibextid=wwXIfr"><img src="icone/facebook.png" alt="icona_facebook" width="35"></a>
+            <a href="https://www.instagram.com/alev.shadow?igsh=NHZ2emE3bWJiM3Ju&utm_source=qr"><img src="icone/instagram.png" alt="icona_instagram" href="https://www.instagram.com/alev.shadow?igsh=NHZ2emE3bWJiM3Ju&utm_source=qr" width="35"></a>
+            <a href=""><img src="icone/linkedim.png" alt="icona_Linkedin" width="35"></a>
+            <a href=""></a><img src="icone/telegram.png" alt="icona_telegram" width="35"></a>
+            <a href=""></a><img src="icone/gmail.png" alt="icona_gmail" width="35"></a>
+        </div>
+    
+        <hr color="white" class="hr_invisibile"> <!--DIVIDER INVISIBILE-->
+    
+        @Vasta Alessia 2025
+    
+    
+    </footer>
+</body>
+
 </html>

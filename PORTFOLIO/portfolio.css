@@ -1,0 +1,220 @@
+HTML {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+HEADER {
+    position: fixed; /* per fissare l'header in alto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #D6C694;
+    padding: 10px 0;
+    z-index: 1000; /* Assicura che rimanga sopra gli altri elementi */
+}
+
+
+MAIN {
+    padding: 100px 0;
+}
+
+
+/* Barra di Navigazione */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* LOGO */
+.logo {
+    font-family: "IM Fell Great Primer SC", serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #30362F;
+}
+
+
+/* Menu di navigazione */
+nav ul {
+    list-style-type: none; /* rimuove i pallini */
+    margin: 0;
+    padding: 0;
+    display: flex; /* elementi in orizzontale */
+}
+
+
+nav ul li {
+    position: relative;
+}
+
+
+nav ul li a, .dropbtn {
+    display: block;
+    color: #30362F;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffff;
+}
+
+
+/* DROPDOWN MENU */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: #30362F;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    color: #A59132;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;  /* Posizionamento assoluto rispetto al contenitore */
+    right: 20px;         /* Distanza dal bordo destro */
+}
+#menu-toggle {
+    display: none;
+}
+
+
+/* MOBILE MENU */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #D6C694;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .hamburger + nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+/* Immagine di Profilo */
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* FONT STYLES */
+.im-fell-great-primer-sc-regular {   
+    font-family: "IM Fell Great Primer SC", serif;   /* testo */
+    font-weight: 400;
+    font-style: normal;}
+.im-fell-double-pica-regular {
+    font-family: "IM Fell Double Pica", serif; /* maiuscolo-maiuscoletto */
+    font-weight: 400;
+    font-style: normal;}
+.im-fell-double-pica-regular-italic {
+    font-family: "IM Fell Double Pica", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+/* BOX IMMAGINI */
+.box_img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100vw; /* Occupa tutta la larghezza del sito */
+    padding: 20px; /* Aggiunge un po' di margine ai lati */
+    box-sizing: border-box;
+  }
+  .box_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+  
+
+/* CONTENUTO DEL TESTO p */
+
+a {
+    text-decoration-line: none;
+    color: #30362F;
+}
+
+p {
+    text-align: center;
+    padding: 20px 50px 40px 50px; /* 1_su 2_destra 3_sotto 4_sinistra */
+}
+
+/* Divisore */
+hr {
+    height: 2px;
+    width: 800px; /* Imposta una lunghezza massima */
+    margin: auto;
+    background-color: #D6C694;
+    border-color: #D6C694;
+}
+.hr_invisibile {
+    opacity: 0;
+}
+
+/* FOOTER*/
+Footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+}
+
+/* barra icone contatti*/
+.container {
+    padding: 20px;
+    background-color: #D6C694;
+    display: flex;
+    flex-direction: row; /* le imagini vengono disposte in fila e non in colonna (column) */
+    align-items: center; /* Centra le immagini */
+    gap: 20px; /* Spaziatura tra le immagini */
+    justify-content: center; /* Spazio tra immagini e barra */ 
+}
